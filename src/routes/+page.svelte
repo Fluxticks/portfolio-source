@@ -1,2 +1,2 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Coming soon: My Portfolio Site</h1>
+<p>Visit <a href="https://github.com/Fluxticks">my github profile</a> in the meantime</p>
