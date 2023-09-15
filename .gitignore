@@ -3,6 +3,7 @@ node_modules
 /build
 /.svelte-kit
 /package
+/fluxticks.github.io
 .env
 .env.*
 !.env.example
