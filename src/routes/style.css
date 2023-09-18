@@ -1,0 +1,11 @@
+:root {
+	--black: #1e1e1e;
+	--white: #f0e6ef;
+	--light: #efc3e6;
+	--pink: #f0a6ca;
+	--blue: #b8bedd;
+	--dark: #9c89b8;
+	background-color: var(--black);
+	color: var(--white);
+	overflow: hidden;
+}
