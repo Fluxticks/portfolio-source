@@ -33,7 +33,9 @@
 <style>
 	* {
 		font-family: 'Victor Mono Variable', sans-serif;
+		text-align: center;
 	}
+
 	h1 {
 		font-weight: 700;
 	}
