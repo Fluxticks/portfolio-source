@@ -58,6 +58,7 @@
 	.waves {
 		position: absolute;
 		bottom: 0;
+		left: 0;
 		background-repeat: repeat-x;
 		background-size: cover;
 		width: 100vw;
