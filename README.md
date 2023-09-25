@@ -5,6 +5,15 @@ The site is based on [SvelteKit](https://kit.svelte.dev) and uses the Svelte [ad
 It is built and deployed to [fluxticks.github.io](https://github.com/Fluxticks/fluxticks.github.io) repo using `npm run deploy`.
 If you want to see the result of the build / the live site, go to [fluxticks.github.io](https://fluxticks.github.io)
 
+## TODO:
+
+- Change opacity based on scroll distance
+- Design hero section
+- Design custom logo
+- Add project contents
+- Add contact section
+- Consider section topics
+
 ## To build and run this site locally
 
 1. Clone this repository
