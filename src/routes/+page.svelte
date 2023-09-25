@@ -1,6 +1,5 @@
 <script>
 	import './style.css';
-	import '@fontsource-variable/victor-mono';
 </script>
 
 <div class="outer">
@@ -9,35 +8,44 @@
 		<p>In the meantime, visit <a href="https://github.com/Fluxticks">my github profile</a></p>
 	</div>
 </div>
-<div
-	class="waves"
-	style="animation-duration: 30s; background-image: url('./wave1.svg'); height: 100%;"
-/>
-<div
-	class="waves"
-	style="animation-duration: 25s; background-image: url('./wave2.svg'); height: 80%;"
-/>
-<div
-	class="waves"
-	style="animation-duration: 20s; background-image: url('./wave3.svg'); height: 60%;"
-/>
-<div
-	class="waves"
-	style="animation-duration: 15s; background-image: url('./wave4.svg'); height: 60%;"
-/>
-<div
-	class="waves"
-	style="animation-duration: 10s; background-image: url('./wave5.svg'); height: 60%;"
-/>
+<div class="wave-container">
+	<div
+		class="wave"
+		style="animation-duration: 30s; background-image: url('./wave1.svg'); height: 100%;"
+	/>
+	<div
+		class="wave"
+		style="animation-duration: 25s; background-image: url('./wave2.svg'); height: 80%;"
+	/>
+	<div
+		class="wave"
+		style="animation-duration: 20s; background-image: url('./wave3.svg'); height: 60%;"
+	/>
+	<div
+		class="wave"
+		style="animation-duration: 15s; background-image: url('./wave4.svg'); height: 40%;"
+	/>
+	<div
+		class="wave"
+		style="animation-duration: 10s; background-image: url('./wave5.svg'); height: 20%;"
+	/>
+</div>
 
 <style>
 	* {
-		font-family: 'Victor Mono Variable', sans-serif;
 		text-align: center;
 	}
 
 	h1 {
 		font-weight: 700;
+	}
+
+	a {
+		color: var(--blue);
+	}
+
+	a:visited {
+		color: var(--dark);
 	}
 
 	.inner {
@@ -55,14 +63,22 @@
 		height: 100vh;
 	}
 
-	.waves {
+	.wave-container {
+		position: absolute;
+		box-sizing: content-box;
+		height: 35vh;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+	}
+
+	.wave {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		background-repeat: repeat-x;
 		background-size: cover;
 		width: 100vw;
-		height: 80%;
 		z-index: -1;
 		opacity: 0.8;
 		animation: waveslide infinite;
@@ -78,13 +94,5 @@
 		to {
 			background-position-x: 3773.81px;
 		}
-	}
-
-	a {
-		color: var(--blue);
-	}
-
-	a:visited {
-		color: var(--dark);
 	}
 </style>
