@@ -2,7 +2,7 @@
 
 This is the source code of my GitHub pages portfolio site.
 The site is based on [SvelteKit](https://kit.svelte.dev) and uses the Svelte [adapter-static](https://kit.svelte.dev/docs/adapter-static) to build a site that can be hosted using GitHub pages.
-It is built and deployed to [fluxticks.github.io](https://github.com/Fluxticks/fluxticks.github.io) repo using `npm run deply`.
+It is built and deployed to [fluxticks.github.io](https://github.com/Fluxticks/fluxticks.github.io) repo using `npm run deploy`.
 If you want to see the result of the build / the live site, go to [fluxticks.github.io](https://fluxticks.github.io)
 
 ## To build and run this site locally
