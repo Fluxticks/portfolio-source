@@ -9,7 +9,7 @@
 
 <div
 	class="wave"
-	style={`animation-duration: ${variant.duration}s; background-image: url('./${variant.file}'); height: ${height};`}
+	style={`animation-duration: ${variant.duration}s; background-image: url('/${variant.file}'); height: ${height};`}
 />
 
 <style>

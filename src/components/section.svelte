@@ -51,7 +51,7 @@
 
 <div
 	class="section-container"
-	style={`background-color: ${wave.color}; --bg-url: url('./${wave.file}'); --bg-height: ${wave.absoluteHeight}; --bg-timing: ${wave.duration}s; --bottom: auto; --top: calc(var(--bg-height) * -1); --position: absolute; --opacity: 1;`}
+	style={`background-color: ${wave.color}; --bg-url: url('/${wave.file}'); --bg-height: ${wave.absoluteHeight}; --bg-timing: ${wave.duration}s; --bottom: auto; --top: calc(var(--bg-height) * -1); --position: absolute; --opacity: 1;`}
 	bind:this={target}
 >
 	<slot />
