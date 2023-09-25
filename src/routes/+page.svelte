@@ -8,6 +8,7 @@
 	<div class="inner">
 		<h1>Coming soon!</h1>
 		<p>In the meantime, visit <a href="https://github.com/Fluxticks">my github profile</a></p>
+		<p>Or checkout the progress at <a href="/dev">The dev page</a></p>
 	</div>
 </div>
 
