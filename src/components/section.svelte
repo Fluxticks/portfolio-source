@@ -5,7 +5,7 @@
 	export let wave = WaveVariant.Wave1;
 
 	/**
-	 * @type {Element}
+	 * @type {HTMLElement}
 	 */
 	let target;
 
