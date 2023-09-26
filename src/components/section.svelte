@@ -1,4 +1,5 @@
 <script>
+	import { minWaveOpacity, scale } from '$lib/util';
 	import { WaveVariant } from '$lib/waves';
 	import { onMount } from 'svelte';
 
@@ -18,19 +19,46 @@
 		 * @type {HTMLElement}
 		 */
 		// @ts-ignore
-		const target = entry.target;
+		const eventTarget = entry.target;
 		console.log(entry);
 		if (!entry.isIntersecting) {
-			target.style.setProperty('--bottom', '0');
-			target.style.setProperty('--top', 'auto');
-			target.style.setProperty('--position', 'fixed');
-			target.style.setProperty('--opacity', '0.9');
+			eventTarget.style.setProperty('--bottom', '0');
+			eventTarget.style.setProperty('--top', 'auto');
+			eventTarget.style.setProperty('--position', 'fixed');
 		} else {
-			target.style.setProperty('--bottom', 'auto');
-			target.style.setProperty('--top', 'calc(var(--bg-height) * -1)');
-			target.style.setProperty('--position', 'absolute');
-			target.style.setProperty('--opacity', '1');
+			eventTarget.style.setProperty('--bottom', 'auto');
+			eventTarget.style.setProperty('--top', 'calc(var(--bg-height) * -1)');
+			eventTarget.style.setProperty('--position', 'absolute');
 		}
+	};
+
+	/**
+	 *
+	 * @param {Object} event
+	 */
+	const scrollListener = (event) => {
+		console.log(event);
+		const height = target.getBoundingClientRect().y - window.innerHeight;
+
+		const maxHeight = window.innerHeight / 2;
+		const minHeight = window.innerHeight / 16;
+
+		if (height > maxHeight) {
+			target.style.opacity = `${minWaveOpacity}`;
+			return;
+		}
+
+		if (height < minHeight) {
+			target.style.opacity = '1';
+			return;
+		}
+
+		const percentHeight = scale(height, minHeight, maxHeight, 0, 1 - minWaveOpacity);
+		if (percentHeight === 100) {
+			target.style.opacity = '1';
+			return;
+		}
+		target.style.opacity = `${minWaveOpacity + percentHeight}`;
 	};
 
 	onMount(() => {
@@ -42,16 +70,18 @@
 
 		let observer = new IntersectionObserver(intersectionCallback, options);
 		observer.observe(target);
+		document.addEventListener('scroll', scrollListener);
 
 		return () => {
 			observer.disconnect();
+			document.removeEventListener('scroll', scrollListener);
 		};
 	});
 </script>
 
 <div
 	class="section-container"
-	style={`background-color: ${wave.color}; --bg-url: url('/${wave.file}'); --bg-height: ${wave.absoluteHeight}; --bg-timing: ${wave.duration}s; --bottom: auto; --top: calc(var(--bg-height) * -1); --position: absolute; --opacity: 1;`}
+	style={`background-color: ${wave.color}; --bg-url: url('/${wave.file}'); --bg-height: ${wave.absoluteHeight}; --bg-timing: ${wave.duration}s; --bottom: auto; --top: calc(var(--bg-height) * -1); --position: absolute;`}
 	bind:this={target}
 >
 	<slot />
@@ -78,7 +108,6 @@
 		content: '';
 		width: max(100vw, 1000px);
 		height: var(--bg-height);
-		opacity: var(--opacity);
 		background-image: var(--bg-url);
 		background-repeat: repeat-x;
 		background-size: cover;
