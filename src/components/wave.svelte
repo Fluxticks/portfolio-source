@@ -19,7 +19,7 @@
 		left: 0;
 		background-repeat: repeat-x;
 		background-size: cover;
-		width: 100vw;
+		width: max(100vw, 1000px);
 		z-index: 1;
 		opacity: 0.9;
 		animation: waveslide infinite;

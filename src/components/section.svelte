@@ -76,7 +76,7 @@
 		bottom: var(--bottom);
 		left: 0;
 		content: '';
-		width: 100%;
+		width: max(100vw, 1000px);
 		height: var(--bg-height);
 		opacity: var(--opacity);
 		background-image: var(--bg-url);
