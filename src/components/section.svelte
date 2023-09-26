@@ -88,6 +88,7 @@
 		animation-direction: alternate;
 		animation-timing-function: cubic-bezier(0.45, 0, 0.45, 1.25);
 		transition: opacity 0.2s ease-in;
+		pointer-events: none;
 	}
 
 	@keyframes waveslide {
