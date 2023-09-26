@@ -1,4 +1,6 @@
 <script>
+	import { minWaveOpacity } from '$lib/util';
+
 	/**
 	 * @type {import('$lib/waves').WaveVariant}
 	 */
@@ -9,7 +11,7 @@
 
 <div
 	class="wave"
-	style={`animation-duration: ${variant.duration}s; background-image: url('/${variant.file}'); height: ${height};`}
+	style={`animation-duration: ${variant.duration}s; background-image: url('/${variant.file}'); height: ${height}; opacity: ${minWaveOpacity}`}
 />
 
 <style>
@@ -21,7 +23,6 @@
 		background-size: cover;
 		width: max(100vw, 1000px);
 		z-index: 1;
-		opacity: 0.9;
 		animation: waveslide infinite;
 		animation-direction: alternate;
 		animation-timing-function: cubic-bezier(0.45, 0, 0.45, 1.25);
