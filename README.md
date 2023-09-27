@@ -7,7 +7,8 @@ If you want to see the result of the build / the live site, go to [fluxticks.git
 
 ## TODO:
 
-- Change opacity based on scroll distance
+- ~~Change opacity based on scroll distance~~
+  - Needs improving
 - Design hero section
 - Design custom logo
 - Add project contents
