@@ -19,16 +19,18 @@
 		Below is a quick overview of the frameworks and languages I know and have used across various
 		projects
 	</p>
-	<div class="techstack">
-		<Card title="Python" tagline="Proficient•Most Active" />
-		<Card title="Java" tagline="Proficient•First Language" />
-		<Card title="JavaScript" tagline="Intermediate•Font-End" />
-		<Card title="HTML" tagline="Intermediate•Font-End" />
-		<Card title="Bash" tagline="Intermediate•Scripting" />
-		<Card title="PyTorch" tagline="Beginner•AI" />
-		<Card title="Svelte" tagline="Beginner•Font-End" />
-		<Card title="Swift" tagline="Beginner•iOS" />
-		<Card title="Tensorflow" tagline="Beginner•AI" />
+	<div class="stackcontainer">
+		<div class="techstack">
+			<Card title="Python" tagline="Proficient•Most Active" />
+			<Card title="Java" tagline="Proficient•First Language" />
+			<Card title="JavaScript" tagline="Intermediate•Font-End" />
+			<Card title="HTML" tagline="Intermediate•Font-End" />
+			<Card title="Bash" tagline="Intermediate•Scripting" />
+			<Card title="PyTorch" tagline="Beginner•AI" />
+			<Card title="Svelte" tagline="Beginner•Font-End" />
+			<Card title="Swift" tagline="Beginner•iOS" />
+			<Card title="Tensorflow" tagline="Beginner•AI" />
+		</div>
 	</div>
 </Section>
 
@@ -109,6 +111,12 @@
 		}
 	}
 
+	.stackcontainer {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
 	.techstack {
 		position: relative;
 		display: flex;
@@ -118,10 +126,10 @@
 		overflow-x: scroll;
 	}
 
-	.techstack::before,
-	.techstack::after {
+	.stackcontainer::before,
+	.stackcontainer::after {
 		content: '';
-		position: fixed;
+		position: absolute;
 		width: 2rem;
 		height: 100%;
 		background: var(--blue);
@@ -129,12 +137,12 @@
 		z-index: 1;
 	}
 
-	.techstack::before {
+	.stackcontainer::before {
 		left: 0;
 		background: linear-gradient(90deg, rgba(138, 150, 203, 1) 0%, rgba(138, 150, 203, 0) 100%);
 	}
 
-	.techstack::after {
+	.stackcontainer::after {
 		right: 0;
 		background: linear-gradient(90deg, rgba(138, 150, 203, 0) 0%, rgba(138, 150, 203, 1) 100%);
 	}

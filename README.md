@@ -9,7 +9,7 @@ If you want to see the result of the build / the live site, go to [fluxticks.git
 
 - ~~Change opacity based on scroll distance~~
   - Needs improving
-- Fix Tech Stack fade out height
+- ~~Fix Tech Stack fade out height~~
 - Design hero section
 - Design custom logo
 - Add project contents
