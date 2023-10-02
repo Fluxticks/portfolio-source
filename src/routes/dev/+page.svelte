@@ -12,7 +12,7 @@
 	</div>
 </div>
 
-<Section>
+<Section staticOpacity={true}>
 	<h1>Section 1</h1>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit magnam ab non similique

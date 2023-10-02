@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 
 	export let wave = WaveVariant.Wave1;
+	export let staticOpacity = false;
 
 	/**
 	 * @type {HTMLElement}
@@ -37,7 +38,10 @@
 	 * @param {Object} event
 	 */
 	const scrollListener = (event) => {
-		console.log(event);
+		if (staticOpacity) {
+			target.style.opacity = '1';
+			return;
+		}
 		const height = target.getBoundingClientRect().y - window.innerHeight;
 
 		const maxHeight = window.innerHeight / 2;
@@ -71,6 +75,12 @@
 		let observer = new IntersectionObserver(intersectionCallback, options);
 		observer.observe(target);
 		document.addEventListener('scroll', scrollListener);
+
+		if (staticOpacity) {
+			target.style.opacity = '1';
+		} else {
+			target.style.opacity = `${minWaveOpacity}`;
+		}
 
 		return () => {
 			observer.disconnect();
