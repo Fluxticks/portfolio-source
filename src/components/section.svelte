@@ -115,6 +115,7 @@
 	}
 
 	.content {
+		transform: translateY(-20%);
 		margin: 0 2rem;
 	}
 
