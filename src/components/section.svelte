@@ -6,6 +6,9 @@
 	export let wave = WaveVariant.Wave1;
 	export let staticOpacity = false;
 
+	let maxHeight = 0;
+	let minHeight = 0;
+
 	/**
 	 * @type {HTMLElement}
 	 */
@@ -42,10 +45,8 @@
 			target.style.opacity = '1';
 			return;
 		}
-		const height = target.getBoundingClientRect().y - window.innerHeight;
 
-		const maxHeight = window.innerHeight / 2;
-		const minHeight = window.innerHeight / 16;
+		const height = target.getBoundingClientRect().y - window.innerHeight;
 
 		if (height > maxHeight) {
 			target.style.opacity = `${minWaveOpacity}`;
@@ -79,6 +80,10 @@
 		if (staticOpacity) {
 			target.style.opacity = '1';
 		} else {
+			maxHeight = window.innerHeight / 2;
+			minHeight = window.innerHeight / 16;
+			const height = target.getBoundingClientRect().y - window.innerHeight;
+			const percentHeight = scale(height, minHeight, maxHeight, 0, 1 - minWaveOpacity);
 			target.style.opacity = `${minWaveOpacity}`;
 		}
 
