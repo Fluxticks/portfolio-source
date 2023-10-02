@@ -1,12 +1,13 @@
 <script>
 	import { WaveVariant } from '$lib/waves';
+	import Hero from '../../components/hero.svelte';
 	import Section from '../../components/section.svelte';
 	import Wave from '../../components/wave.svelte';
 </script>
 
 <div class="hero-outer">
 	<div class="hero-inner">
-		<h1>Fluxticks</h1>
+		<Hero />
 		<p><a href="/">Back home </a></p>
 	</div>
 </div>
