@@ -89,6 +89,17 @@
 		flex-direction: row;
 		align-items: center;
 		height: 100vh;
-		margin-bottom: 10%;
+		animation: reduceHeight 2.5s ease-in-out forwards;
+		animation-delay: 1.5s;
+	}
+
+	@keyframes reduceHeight {
+		from {
+			height: 100vh;
+		}
+
+		to {
+			height: 70vh;
+		}
 	}
 </style>
