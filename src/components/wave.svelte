@@ -22,6 +22,7 @@
 		background-repeat: repeat-x;
 		background-size: cover;
 		width: max(100vw, 1000px);
+		height: 10vh; /* For webkit */
 		z-index: 1;
 		animation: waveslide infinite;
 		animation-direction: alternate;

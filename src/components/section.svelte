@@ -20,15 +20,15 @@
 		 */
 		// @ts-ignore
 		const eventTarget = entry.target;
-		console.log(entry);
-		if (!entry.isIntersecting) {
-			eventTarget.style.setProperty('--bottom', '0');
-			eventTarget.style.setProperty('--top', 'auto');
-			eventTarget.style.setProperty('--position', 'fixed');
-		} else {
+
+		if (entry.isIntersecting || entry.boundingClientRect.top < entry.boundingClientRect.height) {
 			eventTarget.style.setProperty('--bottom', 'auto');
 			eventTarget.style.setProperty('--top', 'calc(var(--bg-height) * -1)');
 			eventTarget.style.setProperty('--position', 'absolute');
+		} else {
+			eventTarget.style.setProperty('--bottom', '0');
+			eventTarget.style.setProperty('--top', 'auto');
+			eventTarget.style.setProperty('--position', 'fixed');
 		}
 	};
 
@@ -88,16 +88,13 @@
 </div>
 
 <style>
-	:root {
-		overflow: auto;
-	}
-
 	.section-container {
 		margin-top: calc(var(--bg-height) / 2);
 		padding-bottom: calc(var(--bg-height) / 2);
 		color: var(--black);
 		position: relative;
 		width: 100vw;
+		overflow-x: clip;
 	}
 
 	.section-container::before {

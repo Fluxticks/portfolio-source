@@ -77,6 +77,7 @@
 
 	.hero-inner {
 		width: fit-content;
+		height: 30vh;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;

@@ -52,5 +52,14 @@
 		flex-direction: row;
 		align-items: center;
 		height: 100vh;
+		overflow: hidden;
+	}
+
+	@media (max-width: 500px) {
+		.outer {
+			margin-top: 10vh;
+			height: 50vh;
+			align-items: start;
+		}
 	}
 </style>
