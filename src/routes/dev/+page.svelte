@@ -106,13 +106,12 @@
 			imageURL="https://i0.wp.com/www.alphr.com/wp-content/uploads/2021/08/How-to-View-When-an-Instagram-Account-Was-Created.png?zoom=2&resize=738%2C320&ssl=1"
 			alternateSide={true}
 			date="18 June 2023"
-			languages="Python / Playwright / openCV"
+			languages="Python / Playwright"
 		>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse fugiat, a quidem nisi
-				dolorem libero dignissimos, quas numquam tempora molestias distinctio cum atque ducimus,
-				magni praesentium perferendis iste optio unde? Enim veritatis reprehenderit neque laudantium
-				sunt labore reiciendis ad mollitia nam ipsum eius rem, aut error velit aperiam sapiente!
+				Similar to my other project, TikTokDL, InstagramDL allows someone to download an Instagram
+				post and the metadata without needing to login. This project makes use of capturing the HTTP
+				requests that are sent to intercept the video for a given link.
 			</p>
 		</Panel>
 	</div>
