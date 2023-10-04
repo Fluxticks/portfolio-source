@@ -115,7 +115,7 @@
 	}
 
 	.content {
-		transform: translateY(-20%);
+		transform: translateY(calc(var(--bg-height) / 2 * -1));
 		margin: 0 2rem;
 	}
 
