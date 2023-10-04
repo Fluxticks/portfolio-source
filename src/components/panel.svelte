@@ -20,14 +20,21 @@
 	export let date = '';
 
 	export let alternateSide = false;
+
+	const columns = alternateSide ? '2fr 1fr' : '1fr 2fr';
+	const order = alternateSide ? 1 : -1;
+	const angle = alternateSide ? '270deg' : '90deg';
+	const marginLeft = alternateSide ? '20%' : 'auto';
+	const marginRight = alternateSide ? 'auto' : '20%';
 </script>
 
-<div class="container" style={`--grid-cols: ${alternateSide ? '1.5fr 1fr' : '1fr 1.5fr'}`}>
+<div
+	class="container"
+	style={`--grid-cols: ${columns}; --margin-left: ${marginLeft}; --margin-right: ${marginRight}`}
+>
 	<div
 		class="imagecontainer"
-		style={`--bg-url: url('${imageURL}'); --order: ${alternateSide ? 1 : -1}; --angle: ${
-			alternateSide ? '270deg' : '90deg'
-		};`}
+		style={`--bg-url: url('${imageURL}'); --order: ${order}; --angle: ${angle};`}
 	/>
 	<div class="textcontainer">
 		<a href={projectURL}><h2>{projectTitle}</h2></a>
@@ -76,10 +83,13 @@
 
 	@media (min-width: 600px) {
 		.container {
+			width: 75%;
 			grid-template-columns: var(--grid-cols);
 			grid-template-rows: auto;
-			width: 80%;
-			aspect-ratio: 5 / 3;
+			max-height: 600px;
+			aspect-ratio: 5 / 4;
+			margin-left: var(--margin-left);
+			margin-right: var(--margin-right);
 		}
 
 		.imagecontainer {
