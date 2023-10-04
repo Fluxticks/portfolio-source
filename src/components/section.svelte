@@ -69,7 +69,7 @@
 	onMount(() => {
 		const options = {
 			root: document,
-			rootMargin: '0px',
+			rootMargin: '25px',
 			threshold: 0.01
 		};
 
