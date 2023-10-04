@@ -25,7 +25,7 @@
 		// @ts-ignore
 		const eventTarget = entry.target;
 
-		if (entry.isIntersecting || entry.boundingClientRect.top < entry.boundingClientRect.height) {
+		if (entry.isIntersecting || entry.boundingClientRect.bottom < 0) {
 			eventTarget.style.setProperty('--bottom', 'auto');
 			eventTarget.style.setProperty('--top', 'calc(var(--bg-height) * -1)');
 			eventTarget.style.setProperty('--position', 'absolute');
