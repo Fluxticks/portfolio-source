@@ -85,13 +85,19 @@
 			projectURL="https://github.com/Fluxticks/TikTokDL/"
 			imageURL="https://img.rasset.ie/001d8231-800.jpg"
 			date="27 May 2023"
-			languages="Python / aioHTTP / Playwright"
+			languages="Python / PyPI / Playwright"
 		>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse fugiat, a quidem nisi
-				dolorem libero dignissimos, quas numquam tempora molestias distinctio cum atque ducimus,
-				magni praesentium perferendis iste optio unde? Enim veritatis reprehenderit neque laudantium
-				sunt labore reiciendis ad mollitia nam ipsum eius rem, aut error velit aperiam sapiente!
+				TikTok's official API is extremely limited and thus did not allow the accessing of videos
+				while not logged in. Due to this I created a simple python package using Playwright to
+				access TikTok and download a post's media content and metadata. While debugging I
+				encountered multiple captchas, which get solved automatically using openCV and some basic
+				image processing techniques included in openCV.
+			</p>
+			<p>
+				This was also my first successful attempt at deploying a python package to <a
+					href="https://pypi.org/project/tiktok-dlpy/">PyPI</a
+				>.
 			</p>
 		</Panel>
 		<Panel
