@@ -84,7 +84,7 @@
 			minHeight = window.innerHeight / 16;
 			const height = target.getBoundingClientRect().y - window.innerHeight;
 			const percentHeight = scale(height, minHeight, maxHeight, 0, 1 - minWaveOpacity);
-			target.style.opacity = `${minWaveOpacity}`;
+			target.style.opacity = `${minWaveOpacity + percentHeight}`;
 		}
 
 		return () => {
