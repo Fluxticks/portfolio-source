@@ -47,10 +47,14 @@
 			languages="HTML / JS / CSS / React"
 		>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse fugiat, a quidem nisi
-				dolorem libero dignissimos, quas numquam tempora molestias distinctio cum atque ducimus,
-				magni praesentium perferendis iste optio unde? Enim veritatis reprehenderit neque laudantium
-				sunt labore reiciendis ad mollitia nam ipsum eius rem, aut error velit aperiam sapiente!
+				This was my first Freelance Front-End project. I used this project to learn the basics of
+				HTML, CSS, JS as well as React.
+			</p>
+			<p>
+				The design process stretched over a period of 6 months. The client and I settled on an Agile
+				design process, meeting often to iterate on the conceptual design. After which I started the
+				implementation process, continuing an Agile interaction with the client until the product
+				reached the clients expectations.
 			</p>
 		</Panel>
 		<Panel
