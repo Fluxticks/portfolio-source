@@ -14,6 +14,11 @@
 	 */
 	export let imageURL;
 
+	/**
+	 * @type {String}
+	 */
+	export let date = '';
+
 	export let alternateSide = false;
 </script>
 
@@ -28,6 +33,9 @@
 		<a href={projectURL}><h2>{projectTitle}</h2></a>
 		<div class="projectdescription">
 			<slot />
+		</div>
+		<div class="timestamp">
+			<p>{date}</p>
 		</div>
 	</div>
 </div>
@@ -98,5 +106,12 @@
 	.projectdescription {
 		color: var(--white);
 		font-weight: 400;
+	}
+
+	.timestamp {
+		position: absolute;
+		color: var(--white);
+		bottom: 0;
+		right: 2rem;
 	}
 </style>
