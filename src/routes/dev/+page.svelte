@@ -66,10 +66,18 @@
 			languages="Python / AWS / Docker / Postgres"
 		>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse fugiat, a quidem nisi
-				dolorem libero dignissimos, quas numquam tempora molestias distinctio cum atque ducimus,
-				magni praesentium perferendis iste optio unde? Enim veritatis reprehenderit neque laudantium
-				sunt labore reiciendis ad mollitia nam ipsum eius rem, aut error velit aperiam sapiente!
+				During my 3 years at University I was an active member of the Esports and Gaming society,
+				primarily in the Esports sector. Once I became a committee member I was faced with issues
+				due to the lack of any automation. Because of this I took on the existing <a
+					href="https://discord.com/company">Discord</a
+				> bot and contributed to the project to get a production-ready bot that is still in use today.
+			</p>
+			<p>
+				Later after the release of <a
+					href="https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ"
+					>Discord's slash-commands</a
+				>, I rewrote the bot from scratch to implement the new protocols as well as rework much of
+				the logic to result in a much more consistent bot.
 			</p>
 		</Panel>
 		<Panel
@@ -129,6 +137,14 @@
 
 	h1 {
 		font-weight: 700;
+	}
+
+	a {
+		color: var(--blue);
+	}
+
+	a:visited {
+		color: var(--dark);
 	}
 
 	.hero-inner {
