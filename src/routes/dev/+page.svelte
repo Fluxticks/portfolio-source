@@ -3,6 +3,7 @@
 	import Card from '../../components/card.svelte';
 	import Hero from '../../components/hero.svelte';
 	import Panel from '../../components/panel.svelte';
+	import Scroll from '../../components/scroll.svelte';
 	import Section from '../../components/section.svelte';
 	import Wave from '../../components/wave.svelte';
 </script>
@@ -10,7 +11,7 @@
 <div class="hero-outer">
 	<div class="hero-inner">
 		<Hero />
-		<p><a href="/">Back home </a></p>
+		<Scroll />
 	</div>
 </div>
 
@@ -118,18 +119,11 @@
 		font-weight: 700;
 	}
 
-	a {
-		color: var(--blue);
-	}
-
-	a:visited {
-		color: var(--dark);
-	}
-
 	.hero-inner {
 		width: fit-content;
 		height: 30vh;
 		margin: 0 auto;
+		padding-bottom: 20vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -139,19 +133,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		height: 100vh;
-		animation: reduceHeight 2.5s ease-in-out forwards;
-		animation-delay: 1.5s;
-	}
-
-	@keyframes reduceHeight {
-		from {
-			height: 100vh;
-		}
-
-		to {
-			height: 70vh;
-		}
+		height: 90vh;
 	}
 
 	.stackcontainer {
