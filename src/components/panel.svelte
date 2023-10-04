@@ -26,6 +26,11 @@
 	const angle = alternateSide ? '270deg' : '90deg';
 	const marginLeft = alternateSide ? '20%' : 'auto';
 	const marginRight = alternateSide ? 'auto' : '20%';
+
+	/**
+	 * @type {String}
+	 */
+	export let languages = '';
 </script>
 
 <div
@@ -38,6 +43,7 @@
 	/>
 	<div class="textcontainer">
 		<a href={projectURL}><h2>{projectTitle}</h2></a>
+		<p style="color: var(--pink); padding-left: 1.5rem; margin: 0;">{`Languages - ${languages}`}</p>
 		<div class="projectdescription">
 			<slot />
 		</div>
@@ -56,6 +62,7 @@
 		width: 95%;
 		background-color: var(--black);
 		aspect-ratio: 5 / 8;
+		max-height: 90vh;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 10px;
 		overflow: clip;
@@ -81,13 +88,13 @@
 		background: linear-gradient(var(--angle), rgba(30, 30, 30, 0) 0%, rgba(30, 30, 30, 1) 100%);
 	}
 
-	@media (min-width: 600px) {
+	@media (min-width: 950px) {
 		.container {
 			width: 75%;
 			grid-template-columns: var(--grid-cols);
 			grid-template-rows: auto;
-			max-height: 600px;
 			aspect-ratio: 5 / 4;
+			max-height: 50vh;
 			margin-left: var(--margin-left);
 			margin-right: var(--margin-right);
 		}

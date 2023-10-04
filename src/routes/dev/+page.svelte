@@ -44,6 +44,7 @@
 			projectURL="https://meine-kleine-manufaktur.de/"
 			imageURL="/projects/jutta.webp"
 			date="5 December 2022"
+			languages="HTML / JS / CSS / React"
 		>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse fugiat, a quidem nisi
@@ -58,6 +59,7 @@
 			imageURL="https://static-cdn.jtvnw.net/jtv_user_pictures/a7ebf400-ac96-4e76-a47e-0f2629440530-profile_banner-480.png"
 			alternateSide={true}
 			date="6 February 2022"
+			languages="Python / AWS / Docker / Postgres"
 		>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse fugiat, a quidem nisi
@@ -71,6 +73,7 @@
 			projectURL="https://github.com/Fluxticks/TikTokDL/"
 			imageURL="https://img.rasset.ie/001d8231-800.jpg"
 			date="27 May 2023"
+			languages="Python / aioHTTP / Playwright"
 		>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse fugiat, a quidem nisi
@@ -85,6 +88,7 @@
 			imageURL="https://i0.wp.com/www.alphr.com/wp-content/uploads/2021/08/How-to-View-When-an-Instagram-Account-Was-Created.png?zoom=2&resize=738%2C320&ssl=1"
 			alternateSide={true}
 			date="18 June 2023"
+			languages="Python / Playwright / openCV"
 		>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse fugiat, a quidem nisi
