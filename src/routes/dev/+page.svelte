@@ -119,16 +119,16 @@
 
 <Section wave={WaveVariant.Wave3}>
 	<h1>Contact Me</h1>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit magnam ab non similique
-		odit voluptatibus eos? Ad recusandae quo odit praesentium sed dolor saepe dolore sunt minima
-		excepturi laborum vitae iusto provident veritatis quam perspiciatis earum, porro eveniet modi
-		nobis quidem minus sit. Ut neque velit nulla tenetur esse nam praesentium repellat saepe
-		voluptate! Hic sequi provident error sed reprehenderit in adipisci corporis porro quo, aut
-		ducimus? Tenetur ea rem, ad temporibus voluptates delectus error mollitia ipsum itaque? Fugit
-		consequuntur facere eligendi quaerat! Totam, debitis! Nam, id, nostrum quis non quaerat rem
-		labore similique, dolore delectus cum cupiditate dicta velit!
-	</p>
+	<div class="contact">
+		<p>
+			If you liked any of my projects, are interested in any of them or want to ask about a
+			potential project, feel free to get into contact with me by any of the methods below:
+		</p>
+		<ul>
+			<li>Discord Tag: <a href="discord://-/users/244050529271939073">@fluxticks</a></li>
+			<li>Email: <a href="mailto:dev.garmentbecky@gmail.com">dev.garmentbecky@gmail.com</a></li>
+		</ul>
+	</div>
 	<br />
 </Section>
 
@@ -210,5 +210,19 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 2rem;
+	}
+
+	.contact {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact > ul > li > a {
+		color: var(--black);
+	}
+
+	.contact > ul > li > a:visited {
+		color: var(--black);
 	}
 </style>
