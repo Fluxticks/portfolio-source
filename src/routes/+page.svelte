@@ -7,17 +7,34 @@
 	import Section from '../components/section.svelte';
 	import Wave from '../components/wave.svelte';
 	import './style.css';
+
+	/**
+	 * @type {HTMLElement}
+	 */
+	var firstSection;
+
+	const clickScroll = () => {
+		if (firstSection === undefined) {
+			return;
+		}
+
+		window.scrollTo({
+			left: firstSection.offsetLeft,
+			top: firstSection.getBoundingClientRect().top,
+			behavior: 'smooth'
+		});
+	};
 </script>
 
 <div class="hero-outer">
 	<div class="hero-inner">
 		<Hero />
-		<Scroll />
+		<Scroll scrollBinding={clickScroll} />
 	</div>
 </div>
 
 <Section staticOpacity={true}>
-	<h1>Tech Stack Overview</h1>
+	<h1 bind:this={firstSection}>Tech Stack Overview</h1>
 	<p>
 		Below is a quick overview of the frameworks and languages I know and have used across various
 		projects

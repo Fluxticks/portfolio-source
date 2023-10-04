@@ -1,4 +1,17 @@
-<div class="mouse-container">
+<script>
+	/**
+	 * @type {any}
+	 */
+	export let scrollBinding;
+</script>
+
+<div
+	class="mouse-container"
+	on:click={scrollBinding}
+	on:keypress={scrollBinding}
+	role="button"
+	tabindex="0"
+>
 	<div class="mouse">
 		<div class="wheel" />
 	</div>
@@ -16,6 +29,9 @@
 		width: 50px;
 		height: 50px;
 		margin: 10px;
+		cursor: pointer;
+		pointer-events: all;
+		z-index: 10;
 	}
 
 	.arrow {

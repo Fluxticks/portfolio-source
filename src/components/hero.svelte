@@ -91,6 +91,7 @@
 		flex-direction: row;
 		width: min(25vw, 15rem);
 		height: 100vw; /* For webkit */
+		pointer-events: none;
 	}
 
 	.visual {
