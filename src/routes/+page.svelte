@@ -132,6 +132,26 @@
 				requests that are sent to intercept the video for a given link.
 			</p>
 		</Panel>
+		<Panel
+			projectTitle="Personal Website"
+			projectURL="https://github.com/Fluxticks/portfolio-source"
+			imageURL="/preview.webp"
+			date="4 October 2023"
+			languages="JavaScript / CSS / Svelte"
+		>
+			<p>
+				After learning the basics of Front-End development and experimenting with different
+				frameworks such as NextJS, Svelte and also basic HTML/JS/CSS.
+			</p>
+			<p>
+				Being my own client, the biggest challenge to building the site was finding a design that
+				looked good and was efficient that I liked. Once I found a design I liked, I decided to use
+				SvelteKit and the StaticAdapter preprocessor to generate a static site that can be hosted on
+				github pages. This resulted in the current site that is being displayed as my <a
+					href="https://fluxticks.github.io">github.io</a
+				> site.
+			</p>
+		</Panel>
 	</div>
 </Section>
 
