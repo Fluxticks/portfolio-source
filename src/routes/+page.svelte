@@ -135,7 +135,7 @@
 		<Panel
 			projectTitle="Personal Website"
 			projectURL="https://github.com/Fluxticks/portfolio-source"
-			imageURL="/preview.webp"
+			imageURL="/projects/website.webp"
 			date="4 October 2023"
 			languages="JavaScript / CSS / Svelte"
 		>
