@@ -7,14 +7,7 @@ If you want to see the result of the build / the live site, go to [fluxticks.git
 
 ## TODO:
 
-- ~~Change opacity based on scroll distance~~
-  - Needs improving
-- ~~Fix Tech Stack fade out height~~
-- Design hero section
-- Design custom logo
-- Add project contents
-- Add contact section
-- Consider section topics
+- Continue to update the site 😄
 
 ## To build and run this site locally
 
