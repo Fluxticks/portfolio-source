@@ -165,6 +165,7 @@
 		<ul>
 			<li>Discord Tag: <a href="discord://-/users/244050529271939073">@fluxticks</a></li>
 			<li>Email: <a href="mailto:dev.garmentbecky@gmail.com">dev.garmentbecky@gmail.com</a></li>
+			<li>GitHub Profile: <a href="https://github.com/Fluxticks">github.com/Fluxticks</a></li>
 		</ul>
 	</div>
 	<br />
